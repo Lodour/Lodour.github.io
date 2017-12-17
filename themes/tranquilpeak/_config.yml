@@ -50,25 +50,25 @@ sidebar:
             title: global.archives
             url: /all-archives
             icon: archive
-        search:
-            title: global.search
-            url: /#search
-            icon: search
-            # `open-algolia-search` classes are used to open algolia search modal
-            class: open-algolia-search
+        # search:
+        #     title: global.search
+        #     url: /#search
+        #     icon: search
+        #     # `open-algolia-search` classes are used to open algolia search modal
+        #     class: open-algolia-search
         about:
             title: global.about
             url: /#about
             icon: question
     author_links:
-        # github:
-        #     title: global.github
-        #     url: https://github.com/
-        #     icon: github
-        # stack_overflow:
-        #     title: global.stack_overflow
-        #     url: http://stackoverflow.com/users
-        #     icon: stack-overflow
+        github:
+            title: global.github
+            url: https://github.com/Lodour
+            icon: github
+        stack_overflow:
+            title: global.stack_overflow
+            url: https://stackoverflow.com/users/7624477/
+            icon: stack-overflow
         # twitter:
         #     title: global.twitter
         #     url: https://twitter.com/
@@ -122,12 +122,12 @@ header:
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
     email:
-    location:
+    location: Shanghai, China
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production)
     # or you can use an external url
     # Overwritten by your gravatar image if `gravatar_email` is filled
-    picture:
+    picture: avatar.png
     # Your Twitter username without the @. E.g : `tranquilpeak`
     twitter:
     # Your personal google plus profile id, not your blog or business page id.
@@ -178,7 +178,7 @@ auto_thumbnail_image: true
 # and use relative url : `your-image.png`
 cover_image: cover.jpg
 # Your favicon located in folder `source/_images/` (development) or in `source/assets/images/` (production)
-favicon:
+favicon: favicon.ico
 # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
 image_gallery: true
 # Pagination behavior of archive, category and tag pages (false: pagination disabled, true: pagination enabled)
@@ -240,18 +240,18 @@ sharing_options:
         icon: "fa-google-plus"
         url: "https://plus.google.com/share?url={{post.permalink}}"
     # Asian social networks
-    # weibo:
-    #     title: "Weibo"
-    #     icon: "fa-weibo"
-    #     url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
-    # qq:
-    #     title: "QQ"
-    #     icon: "fa-qq"
-    #     url: "http://connect.qq.com/widget/shareqq/index.html?url={{post.permalink}}&title={{post.title}}"
-    # qzone:
-    #     title: "Qzone"
-    #     icon: "fa-star"
-    #     url: "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{post.permalink}}"
+    weibo:
+        title: "Weibo"
+        icon: "fa-weibo"
+        url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
+    qq:
+        title: "QQ"
+        icon: "fa-qq"
+        url: "http://connect.qq.com/widget/shareqq/index.html?url={{post.permalink}}&title={{post.title}}"
+    qzone:
+        title: "Qzone"
+        icon: "fa-star"
+        url: "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{post.permalink}}"
     # renren:
     #     title: "Renren"
     #     icon: "fa-renren"
