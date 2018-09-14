@@ -1,11 +1,13 @@
 ---
 title: Hexo + Travis CI 自动部署博客
 date: 2017-12-17 08:25:47
-tags: 技术
-categories: 技术
+categories: Web
+tags:
+  - Web
+  - GitHub
 ---
 
-利用 GitHub + Hexo 搭建个人博客，并通过 Travis CI 自动部署。
+{% cq %} 利用 GitHub Page + Hexo 搭建个人博客，并通过 Travis CI 自动部署。{% endcq %}
 
 <!--more-->
 
@@ -13,7 +15,7 @@ categories: 技术
 ## Homebrew
 > macOS 软件包管理工具。
 
-### 替换 brew 源
+### 替换 Homebrew 源
 * [brew](https://mirrors.shuosc.org/help/homebrew.html)
 * [homebrew-bottles](https://mirrors.shuosc.org/help/homebrew-bottles.html)
 * [homebrew-cask](https://mirrors.shuosc.org/help/homebrew-cask.html)
@@ -29,29 +31,22 @@ brew update && brew upgrade
 
 ```shell
 brew install node
-node -v
-# v8.9.2
-npm -v
-# 5.5.1
 ```
 
 ### 替换 npm 源
 ```shell
 npm config set registry https://registry.npm.taobao.org
-npm config get registry
-# https://registry.npm.taobao.org/
 ```
 
-### 备注
+{% note info %}
 npm 权限问题参考[链接](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
+{% endnote %}
 
 ## Hexo
 > 可以直接参考[官网](https://hexo.io/)
+
 ```shell
 npm install -g hexo-cli
-hexo -v
-# hexo-cli: 1.0.4
-# ...
 ```
 
 # 准备博客
@@ -119,26 +114,6 @@ git push -u origin src
 
 ### 关闭 GitHub 依赖安全检测
 在 Settings / Data services 中关闭 Vulnerability alerts。
-
-## 定制博客
-### 开启 RSS Feed
-* `npm install hexo-generator-feed --save`
-* 在 `_config.yml` 添加
-  ```yml
-  ## RSS
-  feed:
-      type: atom
-      path: atom.xml
-      limit: 20
-  ```
-
-### 开启 Mathjax
-* `npm install hexo-renderer-mathjax --save`
-* 在 `_config.yml` 添加
-  ```yml
-  ## Mathjax
-  mathjax: true
-  ```
 
 ### 更换主题
 更换主题后，对于主题内的 `node_modules`，有以下两种解决方案。
