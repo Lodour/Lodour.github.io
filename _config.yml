@@ -3,11 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Traveller
-subtitle:
-description: Everything happened, happened for a reason.
-author: Lodour
-language: zh-cn
+title: Roll's Blog
+subtitle: 岁月不堪数，故人不知处
+description:
+keywords:
+author: Roll
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
@@ -34,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
@@ -72,16 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: tranquilpeak
-
-## RSS
-feed:
-    type: atom
-    path: atom.xml
-    limit: 20
-
-## Mathjax
-mathjax: true
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
