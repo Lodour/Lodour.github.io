@@ -79,3 +79,66 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+theme_config:
+  # Site Information Settings
+  footer:
+    since: 2016
+    icon:
+      name: heart
+      animated: true
+      color: "#808080"
+  
+  # Menu Settings
+  menu:
+    home: / || home
+    # about: /about/ || user
+    archives: /archives/ || archive
+    categories: /categories/ || th
+    tags: /tags/ || tags
+    schedule: /schedule/ || calendar
+
+  # Scheme Settings
+  scheme: Pisces
+
+  # Sidebar Settings
+  social:
+    GitHub: https://github.com/Lodour || github
+    StackOverflow: https://stackoverflow.com/users/7624477/lodour || stack-overflow
+  social_icons:
+    enable: true
+    icons_only: true
+    transition: true
+  links_title: 友情链接
+  links:
+    Pealing's Blog <span class="with-love" id="animate"><i class="fa fa-heart"></i></span>: https://pealing.github.io/
+    Archy Lau's 生云馆: https://archylau.github.io/
+    Zihao Ye's Blog: https://blog.expye.com/
+  avatar:
+    url: /uploads/avatar.png
+    rounded: true
+
+  # Post Settings
+  codeblock:
+    border_radius: 10
+    copy_button:
+      enable: true
+      show_result: true
+
+  # Font Settings
+  font:
+    enable: true
+    global:
+      external: true
+      family: Monda
+    logo:
+      external: true
+      family: Yesteryear
+
+  # Third Party Services Settings
+  math:
+    enable: true
+  disqus:
+    enable: true
+    shortname: mangogao
+    lazyload: true
