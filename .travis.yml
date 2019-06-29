@@ -13,7 +13,7 @@ after_script:
   - cd ./public
   - git init
   - git add .
-  - git commit -m "Site Update:`date +' %Y-%m-%d %H:%m:%S'`"
+  - git commit -m "Site Update:`TZ=':Asia/Shanghai' date +' %Y-%m-%d %H:%m:%S'`"
   - git push --force --quiet "https://${token}@github.com/Lodour/Lodour.github.io.git" master:master
 
 branches:
