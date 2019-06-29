@@ -1,6 +1,7 @@
 ---
 title: 如何编译并测试 Linux 内核
 date: 2018-12-21 16:01:45
+updated: 2018-12-21 16:01:45
 categories: Operating System
 tags: [Linux, Operating System]
 ---

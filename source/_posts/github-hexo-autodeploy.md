@@ -1,28 +1,18 @@
 ---
 title: Hexo + Travis CI 自动部署博客
 date: 2017-12-17 08:25:47
+updated: 2019-06-29 10:48:31
 categories: Web
-tags: [Web, GitHub]
+tags: [Blog, GitHub]
 ---
 
-{% cq %} 利用 GitHub Page + Hexo 搭建个人博客，并通过 Travis CI 自动部署。{% endcq %}
+{% cq %}
+利用 GitHub Page + Hexo 搭建个人博客，并通过 Travis CI 自动部署。
+{% endcq %}
 
 <!--more-->
 
 # 安装环境
-## Homebrew
-> macOS 软件包管理工具。
-
-### 替换 Homebrew 源
-* [brew](https://mirrors.shuosc.org/help/homebrew.html)
-* [homebrew-bottles](https://mirrors.shuosc.org/help/homebrew-bottles.html)
-* [homebrew-cask](https://mirrors.shuosc.org/help/homebrew-cask.html)
-* [homebrew-core](https://mirrors.shuosc.org/help/homebrew-core.html)
-
-### 更新 brew
-```shell
-brew update && brew upgrade
-```
 
 ## Node.js
 > JavaScript 运行环境，npm 是其自带的软件包管理工具。
@@ -113,8 +103,26 @@ git push -u origin src
 ### 关闭 GitHub 依赖安全检测
 在 Settings / Data services 中关闭 Vulnerability alerts。
 
-### 更换主题
-更换主题后，对于主题内的 `node_modules`，有以下两种解决方案。
+### 对第三方主题的处理
+使用如下命令，将第三方主题的 git 仓库添加为 submodule。
 
-1. 上传，则修改 `.gitignore` 为 `/node_modules`
-2. 编译，对 `.travis.yml` 进行修改
+`git submodule add <url> themes/<name>`
+
+为了避免更新主题时，与自定义的配置文件产生冲突，将 theme 的配置转移至 site 的配置文件中，具体可参考 [Hexo Configuration](https://hexo.io/docs/configuration.html)。
+
+```yaml
+# /_config.yml
+theme_config:
+  name: value
+```
+
+需要对主题更新时，使用如下命令对 submodule 进行更新和提交。
+
+```shell
+cd themes/<name>
+checkout <branch>
+cd ../.. # back to site
+git add themes/<name>
+git commit -m "Update Theme"
+```
+
