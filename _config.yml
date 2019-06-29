@@ -96,7 +96,6 @@ theme_config:
     archives: /archives/ || archive
     categories: /categories/ || th
     tags: /tags/ || tags
-    schedule: /schedule/ || calendar
 
   # Scheme Settings
   scheme: Pisces
