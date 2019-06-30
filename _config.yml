@@ -82,6 +82,13 @@ deploy:
 
 theme_config:
   # Site Information Settings
+  favicon:
+    small: /uploads/favicon-16x16.png
+    medium: /uploads/favicon-32x32.png
+    apple_touch_icon: /uploads/apple-touch-icon.png
+    safari_pinned_tab: /uploads/safari-pinned-tab.svg
+    android_manifest: /uploads/site.webmanifest
+    ms_browserconfig: /uploads/browserconfig.xml
   footer:
     since: 2016
     icon:
