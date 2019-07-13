@@ -144,6 +144,14 @@ theme_config:
   # Third Party Services Settings
   math:
     enable: true
+    per_page: true
+    engine: katex
+    katex:
+      cdn: //cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css
+      copy_tex:
+        enable: true
+        copy_tex_js: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js
+        copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css
   disqus:
     enable: true
     shortname: mangogao
