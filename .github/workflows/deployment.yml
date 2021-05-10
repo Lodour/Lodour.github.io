@@ -1,0 +1,51 @@
+name: Hexo Build
+
+on:
+  push:
+    branches: [src]
+
+jobs:
+  hexo-deployment:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - name: Setup Node.json
+      uses: actions/setup-node@v1
+      with:
+        node-version: '15.12.0'
+
+    - name: Cache Node modules
+      uses: actions/cache@v1
+      id: cache
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install Dependencies
+      run: |
+        node -v
+        npm install -g hexo-cli
+        npm install
+
+    - name: Build
+      run: |
+        hexo clean
+        hexo g
+
+    - name: Deploy
+      env:
+        TOKEN: ${{ secrets.TOKEN }}
+      run: |
+        git config --global user.name "Lodour"
+        git config --global user.email "11145354+Lodour@users.noreply.github.com"
+        cd ./public && git init && git add .
+        git commit -m "Site Update:`TZ=':Asia/Shanghai' date +' %Y-%m-%d %H:%m:%S'`"
+        git push --force --quiet "https://Lodour:$TOKEN@github.com/Lodour/Lodour.github.io.git" master:master
+
