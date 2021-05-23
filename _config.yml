@@ -131,6 +131,8 @@ theme_config:
 
   # Scheme Settings
   scheme: Pisces
+  custom_file_path:
+    variable: source/_data/variables.styl
 
   # Sidebar Settings
   social:
@@ -165,7 +167,8 @@ theme_config:
     global:
       external: true
       family: Source Sans Pro
-    logo:
+      size: 1.0
+    title:
       external: true
       family: Yesteryear
 
