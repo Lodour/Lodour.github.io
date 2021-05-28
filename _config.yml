@@ -168,9 +168,6 @@ theme_config:
       external: true
       family: Source Sans Pro
       size: 1.0
-    title:
-      external: true
-      family: Yesteryear
 
   # Third Party Services Settings
   math:
