@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Roll's Blog
-subtitle: 岁月不堪数，故人不知处
+title: 画本
+subtitle: 摘星捕月把流萤捉
 description:
 keywords:
-author: Roll
+author: 卷来卷去
 language: zh-CN
-timezone: Asia/Shanghai
+timezone: America/Chicago
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -103,84 +103,3 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
-
-theme_config:
-  # Site Information Settings
-  favicon:
-    small: /uploads/favicon-16x16.png
-    medium: /uploads/favicon-32x32.png
-    apple_touch_icon: /uploads/apple-touch-icon.png
-    safari_pinned_tab: /uploads/safari-pinned-tab.svg
-    android_manifest: /uploads/site.webmanifest
-    ms_browserconfig: /uploads/browserconfig.xml
-  footer:
-    since: 2016
-    icon:
-      name: fa fa-heart
-      animated: true
-      color: "#808080"
-    powered: false
-  
-  # Menu Settings
-  menu:
-    home: / || fa fa-home
-    # about: /about/ || user
-    archives: /archives/ || fa fa-archive
-    categories: /categories/ || fa fa-th
-    tags: /tags/ || fa fa-tags
-
-  # Scheme Settings
-  scheme: Pisces
-  custom_file_path:
-    variable: source/_data/variables.styl
-
-  # Sidebar Settings
-  social:
-    GitHub: https://github.com/Lodour || github
-    StackOverflow: https://stackoverflow.com/users/7624477/lodour || stack-overflow
-  social_icons:
-    enable: true
-    icons_only: true
-    transition: true
-  links_settings:
-    title: 友情链接
-    # Available values: block | inline
-    layout: block
-  links:
-    Pealing's Blog <span class="with-love" id="animate"><i class="fa fa-heart"></i></span>: https://pealing.github.io/
-    Archy Lau's 生云馆: https://archylau.github.io/
-    Zihao Ye's Blog: https://expye.com/
-  avatar:
-    url: /uploads/avatar.png
-    rounded: true
-
-  # Post Settings
-  codeblock:
-    border_radius: 10
-    copy_button:
-      enable: true
-      show_result: true
-
-  # Font Settings
-  font:
-    enable: true
-    global:
-      external: true
-      family: Source Sans Pro
-      size: 1.0
-
-  # Third Party Services Settings
-  math:
-    enable: true
-    per_page: true
-    engine: katex
-    katex:
-      cdn: //cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css
-      copy_tex:
-        enable: true
-        copy_tex_js: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js
-        copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css
-  disqus:
-    enable: true
-    shortname: mangogao
-    lazyload: true
