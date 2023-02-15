@@ -22,7 +22,7 @@ minify: true
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
 custom_file_path:
-  #head: source/_data/head.swig
+  head: source/_data/head.njk
   #header: source/_data/header.swig
   #sidebar: source/_data/sidebar.swig
   #postMeta: source/_data/post-meta.swig
@@ -410,7 +410,7 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
   host:
@@ -422,21 +422,21 @@ font:
 
   # Global font settings used for all elements inside <body>.
   global:
-    external: true
-    family: Lato
+    external: false
+    family: LXGW WenKai Lite
     size:
 
   # Font settings for site title (.site-title).
   title:
-    external: true
-    family:
-    size:
+    external: false
+    family: Long Cang
+    size: 2.2
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
-    external: true
+    external: false
     family:
-    size:
+    size: 1.6
 
   # Font settings for posts (.post-body).
   posts:
@@ -445,8 +445,8 @@ font:
 
   # Font settings for <code> and code blocks.
   codes:
-    external: true
-    family:
+    external: false
+    family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace
 
 
 # ---------------------------------------------------------------
