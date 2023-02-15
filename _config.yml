@@ -145,7 +145,6 @@ theme_config:
     # Available values: block | inline
     layout: block
   links:
-    Pealing's Blog <span class="with-love" id="animate"><i class="fa fa-heart"></i></span>: https://pealing.github.io/
     Archy Lau's 生云馆: https://archylau.github.io/
     Zihao Ye's Blog: https://expye.com/
   avatar:
