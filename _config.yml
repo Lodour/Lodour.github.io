@@ -131,8 +131,6 @@ theme_config:
 
   # Scheme Settings
   scheme: Pisces
-  custom_file_path:
-    variable: source/_data/variables.styl
 
   # Sidebar Settings
   social:
