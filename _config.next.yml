@@ -137,8 +137,6 @@ post_navigation: right
 
 preconnect: false
 
-mobile_layout_economy: true
-
 theme_color:
   light: "#e7ddc8"
   dark: "#181c27"
