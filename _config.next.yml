@@ -84,8 +84,8 @@ social_icons:
   icons_only: true
 
 toc:
-  number: false
-  wrap: true
+  number: true
+  wrap: false
   expand_all: true
   max_depth: 3
 
@@ -227,7 +227,6 @@ math:
 pjax: true
 fancybox: true
 lazyload: true
-pangu: true
 
 
 # ---------------------------------------------------------------
