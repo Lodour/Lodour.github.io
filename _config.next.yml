@@ -78,6 +78,7 @@ site_state: false
 social:
   GitHub: https://github.com/Lodour || fab fa-github
   Instagram: https://instagram.com/gy.roll || fab fa-instagram
+  RSS: /atom.xml || fas fa-rss
 
 social_icons:
   icons_only: true
