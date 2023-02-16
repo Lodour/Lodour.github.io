@@ -44,12 +44,12 @@ darkmode: true
 # ---------------------------------------------------------------
 
 favicon:
-  small: /uploads/favicon-16x16.png
-  medium: /uploads/favicon-32x32.png
-  apple_touch_icon: /uploads/apple-touch-icon.png
-  safari_pinned_tab: /uploads/safari-pinned-tab.svg
-  android_manifest: /uploads/site.webmanifest
-  ms_browserconfig: /uploads/browserconfig.xml
+  small: /assets/favicon/favicon.ico
+  medium: /assets/favicon/favicon-32x32.png
+  apple_touch_icon: /assets/favicon/apple-touch-icon.png
+  safari_pinned_tab: /assets/favicon/safari-pinned-tab.svg
+  android_manifest: /assets/favicon/site.webmanifest
+  ms_browserconfig: /assets/favicon/browserconfig.xml
 
 
 # ---------------------------------------------------------------
@@ -57,8 +57,11 @@ favicon:
 # ---------------------------------------------------------------
 
 menu:
+  home: / || fa fa-home
   life: /life/ || fas fa-pizza-slice
   notes: /notes/ || fas fa-book
+  tags: /tags/ || fa fa-tags
+  about: /about/ || fa fa-user
 
 
 # ---------------------------------------------------------------
@@ -67,7 +70,7 @@ menu:
 # ---------------------------------------------------------------
 
 avatar:
-  url: /uploads/avatar.png
+  url: /assets/img/avatar.png
   rounded: true
 
 site_state: false
@@ -75,17 +78,10 @@ site_state: false
 social:
   GitHub: https://github.com/Lodour || fab fa-github
   Instagram: https://instagram.com/gy.roll || fab fa-instagram
+  RSS: /atom.xml || fas fa-rss
 
 social_icons:
   icons_only: true
-
-links_settings:
-  icon: fa fa-link
-  layout: block
-
-links:
-  Archy Lau: https://archylau.github.io/
-  YE Combinator: https://expye.com/
 
 toc:
   number: false
@@ -105,7 +101,7 @@ footer:
     name: fa fa-heart
     animated: true
     color: "#f06292"
-  copyright: Roll
+  copyright: 卷来卷去
   powered: false
 
 
@@ -119,9 +115,17 @@ read_more_btn: false
 post_meta:
   item_text: false
   updated_at:
-    enable: false
+    enable: true
 
 tag_icon: true
+
+reward_settings:
+  enable: true
+  animation: false
+
+reward:
+  wechatpay: /assets/img/wechat.png
+  paypal: /assets/img/paypal.png
 
 post_navigation: right
 
@@ -139,9 +143,9 @@ theme_color:
 
 codeblock:
   # All available themes: https://theme-next.js.org/highlight/
-  prism:
-    light: prism
-    dark: prism-okaidia
+  theme:
+    light: github
+    dark: github-dark
   copy_button:
     enable: true
     style: flat

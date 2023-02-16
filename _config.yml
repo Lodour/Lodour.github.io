@@ -5,8 +5,8 @@
 # Site
 title: 画本
 subtitle: 摘星捕月把流萤捉
-description:
-keywords:
+description: 你是我在深渊中凝望的月亮
+keywords: [卷来卷去, Roll, Hexo, blog, 博客, 画本]
 author: 卷来卷去
 language: zh-CN
 timezone: America/Chicago
@@ -14,7 +14,7 @@ timezone: America/Chicago
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://rollroll.me
-permalink: /posts/:pid/
+permalink: /posts/:name/
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
@@ -34,27 +34,27 @@ skip_render:
 # Writing
 new_post_name: :year/:title.md # File name of new posts
 default_layout: post
-titlecase: false # Transform title into titlecase
+titlecase: true # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
   exclude: ''
-filename_case: 0
+filename_case: 1
 render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false
-  line_number: false
-  auto_detect: true
+  enable: true
+  line_number: true
+  auto_detect: false
   tab_replace: true
   wrap: true
   hljs: false
 prismjs:
-  enable: true
+  enable: false
   preprocess: true
-  line_number: false
+  line_number: true
   tab_replace: ''
 
 # Home page setting
@@ -84,7 +84,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'empty'
+updated_option: 'date'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
