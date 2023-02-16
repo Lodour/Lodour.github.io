@@ -118,6 +118,14 @@ post_meta:
 
 tag_icon: true
 
+reward_settings:
+  enable: true
+  animation: false
+
+reward:
+  wechatpay: /assets/img/wechat.png
+  paypal: /assets/img/paypal.png
+
 post_navigation: right
 
 
