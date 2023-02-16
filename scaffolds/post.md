@@ -1,15 +1,20 @@
 ---
 title: {{ title }}
+categories: []
+tags: []
+pid:
+header: true
+indent: false
+mathjax: false
+comments: true
+toc:
+    enable: true
+cc_license: false
+orig_author:
+orig_source:
+orig_url:
 date: {{ date }}
 updated: {{ date }}
-tags:
-categories:
 ---
 
-{% cq %}
-（简介）
-{% endcq %}
-
-<!--more-->
-
-（正文）
+<!-- more -->

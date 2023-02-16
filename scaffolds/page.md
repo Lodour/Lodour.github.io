@@ -1,4 +1,6 @@
 ---
 title: {{ title }}
-date: {{ date }}
+comments: true
+toc:
+  enable: true
 ---
