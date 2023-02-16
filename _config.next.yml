@@ -114,7 +114,7 @@ read_more_btn: false
 post_meta:
   item_text: false
   updated_at:
-    enable: false
+    enable: true
 
 tag_icon: true
 
