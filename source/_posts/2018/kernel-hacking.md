@@ -2,11 +2,13 @@
 title: 如何编译并测试 Linux 内核
 date: 2018-12-21 16:01:45
 updated: 2018-12-21 16:01:45
-categories: Operating System
-tags: [Linux, Operating System]
+categories: [笔记]
+tags: [Blog, Linux, Operating System]
+mathjax: false
+cc_license: true
 ---
 
-{% cq %} 编译 Linux 内核，并在用户态 Linux 进程（User Mode Linux）或实际环境中进行测试。{% endcq %}
+编译 Linux 内核，并在用户态 Linux 进程（User Mode Linux）或实际环境中进行测试。
 
 <!--more--> 
 
