@@ -44,12 +44,12 @@ darkmode: true
 # ---------------------------------------------------------------
 
 favicon:
-  small: /uploads/favicon-16x16.png
-  medium: /uploads/favicon-32x32.png
-  apple_touch_icon: /uploads/apple-touch-icon.png
-  safari_pinned_tab: /uploads/safari-pinned-tab.svg
-  android_manifest: /uploads/site.webmanifest
-  ms_browserconfig: /uploads/browserconfig.xml
+  small: /assets/favicon/favicon.ico
+  medium: /assets/favicon/favicon-32x32.png
+  apple_touch_icon: /assets/favicon/apple-touch-icon.png
+  safari_pinned_tab: /assets/favicon/safari-pinned-tab.svg
+  android_manifest: /assets/favicon/site.webmanifest
+  ms_browserconfig: /assets/favicon/browserconfig.xml
 
 
 # ---------------------------------------------------------------
@@ -70,7 +70,7 @@ menu:
 # ---------------------------------------------------------------
 
 avatar:
-  url: /uploads/avatar.png
+  url: /assets/img/avatar.png
   rounded: true
 
 site_state: false
@@ -135,6 +135,8 @@ post_navigation: right
 # ---------------------------------------------------------------
 
 preconnect: false
+
+mobile_layout_economy: true
 
 theme_color:
   light: "#e7ddc8"
