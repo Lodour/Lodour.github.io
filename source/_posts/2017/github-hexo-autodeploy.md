@@ -2,13 +2,13 @@
 title: Hexo + Travis CI 自动部署博客
 date: 2017-12-17 08:25:47
 updated: 2019-06-29 10:48:31
-categories: Web
+categories: [笔记]
 tags: [Blog, GitHub]
+mathjax: false
+cc_license: true
 ---
 
-{% cq %}
 利用 GitHub Page + Hexo 搭建个人博客，并通过 Travis CI 自动部署。
-{% endcq %}
 
 <!--more-->
 

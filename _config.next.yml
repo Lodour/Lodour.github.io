@@ -1,0 +1,254 @@
+# ===============================================================
+# It's recommended to use Alternate Theme Config to configure NexT
+# Modifying this file may result in merge conflict
+# See: https://theme-next.js.org/docs/getting-started/configuration
+# ===============================================================
+
+# ---------------------------------------------------------------
+# Theme Core Configuration Settings
+# See: https://theme-next.js.org/docs/theme-settings/
+# ---------------------------------------------------------------
+
+# Allow to cache content generation.
+cache:
+  enable: true
+
+# Remove unnecessary files after hexo generate.
+minify: true
+
+# Define custom file paths.
+# Create your custom files in site directory `source/_data` and uncomment needed files below.
+custom_file_path:
+  head: source/_data/head.njk
+  #header: source/_data/header.swig
+  #sidebar: source/_data/sidebar.swig
+  #postMeta: source/_data/post-meta.swig
+  postBodyEnd: source/_data/post-body-end.njk
+  footer: source/_data/footer.njk
+  #bodyEnd: source/_data/body-end.swig
+  variable: source/_data/variables.styl
+  mixin: source/_data/mixins.styl
+  style: source/_data/styles.styl
+
+
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+
+scheme: Gemini
+darkmode: true
+
+
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+favicon:
+  small: /assets/favicon/favicon.ico
+  medium: /assets/favicon/favicon-32x32.png
+  apple_touch_icon: /assets/favicon/apple-touch-icon.png
+  safari_pinned_tab: /assets/favicon/safari-pinned-tab.svg
+  android_manifest: /assets/favicon/site.webmanifest
+  ms_browserconfig: /assets/favicon/browserconfig.xml
+
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+
+menu:
+  home: / || fa fa-home
+  life: /life/ || fas fa-pizza-slice
+  notes: /notes/ || fas fa-book
+  tags: /tags/ || fa fa-tags
+  about: /about/ || fa fa-user
+
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# See: https://theme-next.js.org/docs/theme-settings/sidebar
+# ---------------------------------------------------------------
+
+avatar:
+  url: /assets/img/avatar.png
+  rounded: true
+
+site_state: false
+
+social:
+  GitHub: https://github.com/Lodour || fab fa-github
+  Instagram: https://instagram.com/gy.roll || fab fa-instagram
+  RSS: /atom.xml || fas fa-rss
+
+social_icons:
+  icons_only: true
+
+toc:
+  number: false
+  wrap: true
+  expand_all: true
+  max_depth: 3
+
+
+# ---------------------------------------------------------------
+# Footer Settings
+# See: https://theme-next.js.org/docs/theme-settings/footer
+# ---------------------------------------------------------------
+
+footer:
+  since: 2016
+  icon:
+    name: fa fa-heart
+    animated: true
+    color: "#f06292"
+  copyright: 卷来卷去
+  powered: false
+
+
+# ---------------------------------------------------------------
+# Post Settings
+# See: https://theme-next.js.org/docs/theme-settings/posts
+# ---------------------------------------------------------------
+
+read_more_btn: false
+
+post_meta:
+  item_text: false
+  updated_at:
+    enable: true
+
+tag_icon: true
+
+reward_settings:
+  enable: true
+  animation: false
+
+reward:
+  wechatpay: /assets/img/wechat.png
+  paypal: /assets/img/paypal.png
+
+post_navigation: right
+
+
+# ---------------------------------------------------------------
+# Misc Theme Settings
+# See: https://theme-next.js.org/docs/theme-settings/miscellaneous
+# ---------------------------------------------------------------
+
+preconnect: false
+
+theme_color:
+  light: "#e7ddc8"
+  dark: "#181c27"
+
+codeblock:
+  # All available themes: https://theme-next.js.org/highlight/
+  theme:
+    light: github
+    dark: github-dark
+  copy_button:
+    enable: true
+    style: flat
+
+back2top:
+  scrollpercent: true
+
+
+# ---------------------------------------------------------------
+# Font Settings
+# ---------------------------------------------------------------
+# Find fonts on Google Fonts (https://fonts.google.com)
+# All fonts set here will have the following styles:
+#   light | light italic | normal | normal italic | bold | bold italic
+# Be aware that setting too much fonts will cause site running slowly
+# ---------------------------------------------------------------
+# Web Safe fonts are recommended for `global` (and `title`):
+# Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
+# ---------------------------------------------------------------
+
+font:
+  enable: true
+  global:
+    external: false
+    family: LXGW WenKai Lite  # EB Garamond, Noto Serif SC
+  title:
+    external: false
+    family: Long Cang
+    size: 2.2
+  headings:
+    external: false
+    size: 1.6
+  codes:
+    external: false
+    family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace
+
+
+# ---------------------------------------------------------------
+# Tags Settings
+# See: https://theme-next.js.org/docs/tag-plugins/
+# ---------------------------------------------------------------
+
+note:
+  style: flat
+  icons: true
+  light_bg_offset: 0
+
+tabs:
+  sticky: true
+  transition:
+    tabs: true
+    labels: true
+
+
+# ---------------------------------------------------------------
+# Third Party Plugins & Services Settings
+# See: https://theme-next.js.org/docs/third-party-services/
+# More plugins: https://github.com/next-theme/awesome-next
+# ---------------------------------------------------------------
+
+# ---------------------------------------------------------------
+# Math Formulas Render Support
+# See: https://theme-next.js.org/docs/third-party-services/math-equations
+# Warning: Please install / uninstall the relevant renderer according to the documentation.
+# Server-side plugin: https://github.com/next-theme/hexo-filter-mathjax
+# ---------------------------------------------------------------
+
+math:
+  mathjax:
+    enable: true
+    tags: ams
+
+
+# ---------------------------------------------------------------
+# External Libraries
+# See: https://theme-next.js.org/docs/third-party-services/external-libraries
+# ---------------------------------------------------------------
+
+pjax: true
+fancybox: true
+lazyload: true
+pangu: true
+
+
+# ---------------------------------------------------------------
+# Animation Settings
+# ---------------------------------------------------------------
+
+motion:
+  enable: false
+
+
+# ---------------------------------------------------------------
+# Comments Settings
+# See: https://theme-next.js.org/docs/third-party-services/comments
+# ---------------------------------------------------------------
+
+
+# ---------------------------------------------------------------
+# CDN Settings
+# See: https://theme-next.js.org/docs/advanced-settings/vendors
+# ---------------------------------------------------------------
+
+css: css
+js: js
+images: /assets/img/

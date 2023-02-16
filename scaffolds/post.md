@@ -2,14 +2,11 @@
 title: {{ title }}
 date: {{ date }}
 updated: {{ date }}
-tags:
-categories:
+comments: true
+categories: []
+tags: []
+mathjax: false
+cc_license: true
 ---
 
-{% cq %}
-（简介）
-{% endcq %}
-
 <!--more-->
-
-（正文）

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://rollroll.me/sitemap.xml
