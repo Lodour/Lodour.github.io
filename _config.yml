@@ -102,6 +102,16 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next
 
+# hexo-renderer-markdown-it
+## See: https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration
+markdown:
+  langPrefix: 'language-'
+  plugins:
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
