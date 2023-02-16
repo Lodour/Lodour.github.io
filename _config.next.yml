@@ -117,6 +117,10 @@ post_meta:
   updated_at:
     enable: true
 
+symbols_count_time:
+  separated_meta: false
+  item_text_total: false
+
 tag_icon: true
 
 reward_settings:

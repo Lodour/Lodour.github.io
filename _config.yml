@@ -112,6 +112,15 @@ markdown:
     - markdown-it-sub
     - markdown-it-sup
 
+# hexo-word-counter
+## See: https://theme-next.js.org/docs/theme-settings/posts.html#Post-Wordcount
+symbols_count_time:
+  symbols: true
+  time: false
+  total_symbols: false
+  total_time: false
+  wpm: 300
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
