@@ -143,9 +143,9 @@ theme_color:
 
 codeblock:
   # All available themes: https://theme-next.js.org/highlight/
-  prism:
-    light: prism
-    dark: prism-okaidia
+  theme:
+    light: github
+    dark: github-dark
   copy_button:
     enable: true
     style: flat
