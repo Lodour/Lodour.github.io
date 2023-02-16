@@ -57,8 +57,11 @@ favicon:
 # ---------------------------------------------------------------
 
 menu:
+  home: / || fa fa-home
   life: /life/ || fas fa-pizza-slice
   notes: /notes/ || fas fa-book
+  tags: /tags/ || fa fa-tags
+  about: /about/ || fa fa-user
 
 
 # ---------------------------------------------------------------
@@ -79,14 +82,6 @@ social:
 social_icons:
   icons_only: true
 
-links_settings:
-  icon: fa fa-link
-  layout: block
-
-links:
-  Archy Lau: https://archylau.github.io/
-  YE Combinator: https://expye.com/
-
 toc:
   number: false
   wrap: true
@@ -105,7 +100,7 @@ footer:
     name: fa fa-heart
     animated: true
     color: "#f06292"
-  copyright: Roll
+  copyright: 卷来卷去
   powered: false
 
 
