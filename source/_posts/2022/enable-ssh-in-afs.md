@@ -5,8 +5,8 @@ categories: [笔记]
 tags: [AFS, SSH, Kerberos]
 mathjax: false
 cc_license: true
-date: 2019-09-16 10:15:02
-updated: 2019-09-16 10:15:02
+date: 2022-09-16 10:15:02
+updated: 2022-09-16 10:15:02
 ---
 
 设置免密码、免 Duo 登陆 CS @ UW-Madison 服务器。
