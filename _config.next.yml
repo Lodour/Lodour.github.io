@@ -135,6 +135,14 @@ post_navigation: right
 
 
 # ---------------------------------------------------------------
+# Statistics and Analytics
+# See: https://theme-next.js.org/docs/third-party-services/statistics-and-analytics
+# ---------------------------------------------------------------
+
+baidu_analytics: c2052720ec7ff29214b2f40ece8700fb
+
+
+# ---------------------------------------------------------------
 # Misc Theme Settings
 # See: https://theme-next.js.org/docs/theme-settings/miscellaneous
 # ---------------------------------------------------------------
