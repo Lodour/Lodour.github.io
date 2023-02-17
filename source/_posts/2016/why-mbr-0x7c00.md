@@ -2,7 +2,7 @@
 title: 为什么 MBR 加载到内存的 0x7c00 处
 comments: true
 categories: [笔记]
-tags: [Operating System]
+tags: [OS]
 mathjax: false
 cc_license: true
 date: 2016-12-03 23:35:47

@@ -3,7 +3,7 @@ title: 编译并测试 Linux 内核
 date: 2018-12-21 16:01:45
 updated: 2018-12-21 16:01:45
 categories: [笔记]
-tags: [Linux, Operating System]
+tags: [Linux, OS]
 mathjax: false
 cc_license: true
 ---

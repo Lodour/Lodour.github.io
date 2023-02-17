@@ -58,7 +58,7 @@ favicon:
 
 menu:
   home: / || fa fa-home
-  life: /life/ || fas fa-pizza-slice
+  muse: /muse/ || fa fa-lightbulb
   notes: /notes/ || fas fa-book
   tags: /tags/ || fa fa-tags
   about: /about/ || fa fa-user

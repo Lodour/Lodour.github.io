@@ -1,8 +1,8 @@
 ---
 title: 妥协与消失的善意
 comments: true
-categories: [生活]
-tags: [随想]
+categories: [随想]
+tags: []
 mathjax: false
 cc_license: true
 date: 2019-08-22 17:27:14

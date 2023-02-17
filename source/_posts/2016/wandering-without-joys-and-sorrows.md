@@ -1,8 +1,8 @@
 ---
 title: 没有悲欢地漂泊
 comments: true
-categories: [生活]
-tags: [随想, 成长, 性格]
+categories: [随想]
+tags: [成长, 性格]
 mathjax: false
 cc_license: true
 date: 2016-04-06 10:41:04

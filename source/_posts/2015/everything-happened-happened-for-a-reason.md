@@ -1,8 +1,8 @@
 ---
 title: Everything happened, happened for a reason
 comments: true
-categories: [生活]
-tags: [随想]
+categories: [随想]
+tags: [电影, 孤独]
 mathjax: false
 cc_license: true
 date: 2015-05-08 06:08:58
