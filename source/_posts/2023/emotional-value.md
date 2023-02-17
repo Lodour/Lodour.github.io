@@ -1,7 +1,7 @@
 ---
 title: 我眼中的情绪价值
 comments: true
-categories: [生活]
+categories: [随想]
 tags: [情感, 情绪, 情绪价值, 亲密关系]
 mathjax: true
 cc_license: true

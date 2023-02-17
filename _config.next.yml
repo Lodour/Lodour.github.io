@@ -58,7 +58,7 @@ favicon:
 
 menu:
   home: / || fa fa-home
-  life: /life/ || fas fa-pizza-slice
+  muse: /muse/ || fa fa-lightbulb
   notes: /notes/ || fas fa-book
   tags: /tags/ || fa fa-tags
   about: /about/ || fa fa-user
@@ -96,7 +96,7 @@ toc:
 # ---------------------------------------------------------------
 
 footer:
-  since: 2016
+  since: 2015
   icon:
     name: fa fa-heart
     animated: true
@@ -132,6 +132,14 @@ reward:
   paypal: /assets/img/paypal.png
 
 post_navigation: right
+
+
+# ---------------------------------------------------------------
+# Statistics and Analytics
+# See: https://theme-next.js.org/docs/third-party-services/statistics-and-analytics
+# ---------------------------------------------------------------
+
+baidu_analytics: c2052720ec7ff29214b2f40ece8700fb
 
 
 # ---------------------------------------------------------------

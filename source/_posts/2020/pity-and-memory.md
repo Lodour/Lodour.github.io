@@ -1,8 +1,8 @@
 ---
 title: 遗憾和记忆
 comments: true
-categories: [生活]
-tags: [随想, 遗憾, 记忆]
+categories: [随想]
+tags: [遗憾, 记忆]
 mathjax: false
 cc_license: true
 date: 2020-07-06 17:11:04

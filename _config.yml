@@ -67,9 +67,9 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: life
+default_category: muse
 category_map:
-  生活: life
+  随想: muse
   笔记: notes
 tag_map:
 
