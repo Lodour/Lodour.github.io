@@ -1,8 +1,8 @@
 ---
 title: 设置 AFS 无密码登陆
 comments: true
-categories: []
-tags: []
+categories: [笔记]
+tags: [AFS, SSH, Linux, Kerberos]
 mathjax: false
 cc_license: true
 date: 2019-09-16 10:15:02
