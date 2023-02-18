@@ -78,6 +78,7 @@ site_state: false
 social:
   GitHub: https://github.com/Lodour || fab fa-github
   Instagram: https://instagram.com/gy.roll || fab fa-instagram
+  Academic: https://pages.cs.wisc.edu/~gy || fas fa-graduation-cap
   RSS: /atom.xml || fas fa-rss
 
 social_icons:
