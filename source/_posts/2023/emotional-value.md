@@ -5,6 +5,7 @@ categories: [随想]
 tags: [情感, 情绪, 情绪价值, 亲密关系]
 mathjax: true
 cc_license: true
+sticky: 2
 date: 2023-02-13 01:21:32
 updated: 2023-02-13 01:21:32
 ---
