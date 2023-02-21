@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://rollroll.me/sitemap.xml
+Sitemap: https://blog.rollroll.me/sitemap.xml
