@@ -5,7 +5,6 @@ categories: [随想]
 tags: [成长, 性格]
 mathjax: false
 cc_license: true
-sticky: 1
 date: 2016-04-06 10:41:04
 updated: 2016-04-06 10:41:04
 ---
