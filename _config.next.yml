@@ -141,6 +141,9 @@ post_navigation: right
 # ---------------------------------------------------------------
 
 baidu_analytics: 82807e8a5d28efd2126da17a0e2830e5
+google_analytics:
+  tracking_id: G-B8P0B4PSXJ
+  only_pageview: false
 
 
 # ---------------------------------------------------------------
