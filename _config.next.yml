@@ -78,6 +78,7 @@ site_state: false
 social:
   GitHub: https://github.com/Lodour || fab fa-github
   Instagram: https://instagram.com/gy.roll || fab fa-instagram
+  Academic: https://pages.cs.wisc.edu/~gy || fas fa-graduation-cap
   RSS: /atom.xml || fas fa-rss
 
 social_icons:
@@ -139,7 +140,10 @@ post_navigation: right
 # See: https://theme-next.js.org/docs/third-party-services/statistics-and-analytics
 # ---------------------------------------------------------------
 
-baidu_analytics: c2052720ec7ff29214b2f40ece8700fb
+baidu_analytics: 82807e8a5d28efd2126da17a0e2830e5
+google_analytics:
+  tracking_id: G-B8P0B4PSXJ
+  only_pageview: false
 
 
 # ---------------------------------------------------------------

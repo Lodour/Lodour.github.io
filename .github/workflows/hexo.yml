@@ -6,6 +6,7 @@ on:
     branches: ["main", "develop"]
     paths-ignore:
       - 'README.md'
+      - 'source/_drafts/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
