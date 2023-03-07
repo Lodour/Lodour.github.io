@@ -111,7 +111,7 @@ footer:
 # See: https://theme-next.js.org/docs/theme-settings/posts
 # ---------------------------------------------------------------
 
-read_more_btn: false
+read_more_btn: true
 
 post_meta:
   item_text: false
