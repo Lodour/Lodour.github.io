@@ -258,6 +258,25 @@ motion:
 # See: https://theme-next.js.org/docs/third-party-services/comments
 # ---------------------------------------------------------------
 
+# See: https://www.npmjs.com/package/@waline/hexo-next
+waline:
+  enable: true
+  serverURL: https://blog-waline.rollroll.me
+  login: disabled
+  meta: [nick, mail, link]
+  requiredMeta: [nick, mail]
+  commentCount: false
+  pageview: false
+  dark: auto
+  emoji:
+    - https://unpkg.com/@waline/emojis@1.0.1/weibo
+    - https://unpkg.com/@waline/emojis@1.0.1/qq
+  lang: zh-CN
+  locale:
+    placeholder: 欢迎评论
+    admin: 站长
+    nick: 昵称*
+    mail: 邮箱*
 
 # ---------------------------------------------------------------
 # CDN Settings
