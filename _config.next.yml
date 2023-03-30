@@ -116,7 +116,7 @@ read_more_btn: true
 post_meta:
   item_text: false
   updated_at:
-    enable: false
+    enable: true
 
 symbols_count_time:
   separated_meta: false
