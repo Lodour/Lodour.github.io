@@ -265,7 +265,7 @@ waline:
   login: disabled
   meta: [nick, mail, link]
   requiredMeta: [nick, mail]
-  commentCount: true
+  commentCount: false
   pageview: false
   dark: auto
   emoji:
