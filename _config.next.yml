@@ -111,12 +111,12 @@ footer:
 # See: https://theme-next.js.org/docs/theme-settings/posts
 # ---------------------------------------------------------------
 
-read_more_btn: true
+read_more_btn: false
 
 post_meta:
   item_text: false
   updated_at:
-    enable: true
+    enable: false
 
 symbols_count_time:
   separated_meta: false
