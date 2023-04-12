@@ -247,6 +247,62 @@ ssb   ed25519 2023-02-24 [A] [expires: 2024-02-24]
 
 之后，历史 Commit 就会显示 Verified，只有点进去会告知 Revoke。
 
+### 远程使用 Yubi Key
+
+有时需要在远程服务器使用 GPG，而 GPG 的 Private Key 只存在本地的 YubiKey 里。这个时候需要使用 SSH 将远程服务器的 GPG Socket 转发到本地。转发后，远程服务器的 GPG 请求会被拉取到本地，YubiKey 则会响应这个请求。
+
+{% note danger %}
+#### 安全隐患
+**转发过程中，远程服务器的 root 或同用户的任何程序都可以与这个 Socket 交互，让本地的 GPG 进行操作。**
+{% endnote %}
+
+因为转发过程中所有操作都是自动完成的，所以需要完全信任远程服务器，否则远程服务器的 root 或者恶意程序可以直接获取 Private Key。安全使用需要做到以下几点：
+
+1. 本地的 Private Key 储存在 YubiKey 中，保证 Private Key 不被导出。
+2. 但此时 YubiKey 仍会响应非法的解密或认证请求，因此需要设置触摸确认，防止自动执行操作。
+
+可以使用以下命令设置触摸确认：
+
+```sh
+ykman openpgp keys set-touch enc on
+ykman openpgp keys set-touch aut on
+ykman openpgp keys set-touch sig on
+```
+
+下面是开启转发的代码：
+
+```sh
+#!/bin/bash
+# original author: Dustin J. Mitchell <dustin@cs.uchicago.edu>
+
+# Usage:
+# 1. Save as `~/gpg-remote`
+# 2. Start by `~/gpg-remote <remote-host-name>`
+# 3. Presss enter to exit.
+
+set -e
+
+# Set host
+host=$1
+if [ -z "$host" ]; then
+    echo "Error: Missing hostname."
+    exit 1
+fi
+
+# Get home dir in remote host
+remote_home=`ssh $host 'echo $HOME'`
+
+# remove any existing agent socket (in theory `StreamLocalBindUnlink yes`
+# does this, but in practice, not so much)
+ssh $host "rm -f $remote_home/.gnupg/S.gpg-agent"
+
+# Start port forwarding
+ssh -t -R "$remote_home/.gnupg/S.gpg-agent":"$HOME/.gnupg/S.gpg-agent.extra" $host \
+  sh -c "echo; echo 'Perform remote GPG operations (Press enter to exit)...'; \
+      read; \
+      sleep 2; \
+      rm -f $remote_home/.gnupg/S.gpg-agent";
+```
 
 
 [^tutorial]: https://www.linux.com/news/protecting-code-integrity-pgp-part-1-basic-pgp-concepts-and-tools/
