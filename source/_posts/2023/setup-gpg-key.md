@@ -6,7 +6,7 @@ tags: [GPG, Mac]
 mathjax: false
 cc_license: true
 date: 2023-02-24 14:47:58
-updated: 2023-02-27 15:30:00
+updated: 2024-02-27 15:30:00
 ---
 
 构建 GPG Key 签名、加密、认证体系。
@@ -246,6 +246,28 @@ ssb   ed25519 2023-02-24 [A] [expires: 2024-02-24]
 ```
 
 之后，历史 Commit 就会显示 Verified，只有点进去会告知 Revoke。
+
+
+### 更新并发布过期的 Sub Keys 公钥
+
+当 Sub Key 过期的时候，需要插入 Master Key 进行续期：
+
+```sh
+❯ gpg --edit-key $KEYID
+```
+
+因为有三个 Sub Key，需要全部选中并更新：
+
+1. 依次选择所有的 Key：`key 1`, `key 2`, `key 3`
+2. 设置过期时间：`expire`  并确认 `1y`
+3. 插入 Master Key 后确认退出
+
+之后，将更新的公钥导出并发布：
+
+```sh
+❯ gpg --export --armor $KEYID
+```
+
 
 ### 远程使用 Yubi Key
 
