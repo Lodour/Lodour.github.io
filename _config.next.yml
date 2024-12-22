@@ -161,7 +161,7 @@ codeblock:
   # All available themes: https://theme-next.js.org/highlight/
   theme:
     light: github
-    dark: github-dark
+    dark: github
   copy_button:
     enable: true
     style: flat
