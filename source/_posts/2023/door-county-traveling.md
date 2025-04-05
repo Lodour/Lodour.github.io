@@ -1,7 +1,7 @@
 ---
 title: 一场晚秋的治愈之旅
 comments: true
-categories: [笔记]
+categories: [随想]
 tags: [旅行, 生活]
 mathjax: false
 cc_license: false
