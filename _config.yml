@@ -5,11 +5,11 @@
 # Site
 title: 画本
 subtitle: 摘星捕月把流萤捉
-description: 岁月不堪数，故人不知处
+description: 没有悲欢地漂泊
 keywords: [卷来卷去, Roll, Hexo, blog, 博客, 画本]
 author: 卷来卷去
 language: zh-CN
-timezone: America/Chicago
+timezone: America/Los_Angeles
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
