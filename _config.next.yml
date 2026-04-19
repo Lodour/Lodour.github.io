@@ -70,7 +70,7 @@ menu:
 # ---------------------------------------------------------------
 
 avatar:
-  url: /assets/img/avatar.png
+  url: /assets/img/avatar.jpg
   rounded: true
 
 site_state: false
